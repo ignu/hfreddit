@@ -8,7 +8,9 @@ class AppDelegate
       view_controller
     )
 
+    nav_controller.setNavigationBarHidden true
     @window.rootViewController = nav_controller
+    @window.rootViewController.wantsFullScreenLayout = true
     @window.makeKeyAndVisible
     true
   end

@@ -11,18 +11,8 @@ class ImageApi
 
   private
 
-  def url_for(subreddit)
-    "http://www.reddit.com/r/#{subreddit}.json"
-  end
-
-  def self.get_image(url)
-    ns_url = NSURL.URLWithString(url)
-    NSData.dataWithContentsOfURL ns_url
-  end
-
-  def self.animated?(url)
-    data = get_image(url)
-    data.to_s[0..12].include? "GIF89a"
-  end
+    def url_for(subreddit)
+      "http://www.reddit.com/r/#{subreddit}.json"
+    end
 end
 

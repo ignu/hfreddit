@@ -4,6 +4,6 @@ describe "Application 'hfreddit'" do
   end
 
   it "has one window" do
-    @app.windows.size.should == 1
+    @app.windows.size.should == 2
   end
 end
